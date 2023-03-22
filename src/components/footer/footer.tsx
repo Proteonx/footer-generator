@@ -1,8 +1,4 @@
-import React, { FC, useEffect, useState } from 'react';
-import animacja from '@assets/img/Animacja.gif';
-import c_icon from '@assets/img/c_icon.png';
-import link_icon from '@assets/img/link_icon.png';
-import point from '@assets/img/point.png';
+import React, { useEffect, useState } from 'react';
 import { Props } from '@screens/footer-generator/footer-generator';
 
 export const Footer = () => {
@@ -105,7 +101,7 @@ export const Footer = () => {
                                               className="a_linkedin"
                                             >
                                               <img
-                                                src={link_icon}
+                                                src="https://email-blob.s3.pl-waw.scw.cloud/footer/link_icon.png"
                                                 alt="Instagram"
                                                 className="img_linkedin"
                                               />
@@ -117,7 +113,7 @@ export const Footer = () => {
                                               className="a_linkedin"
                                             >
                                               <img
-                                                src={c_icon}
+                                                src="https://email-blob.s3.pl-waw.scw.cloud/footer/c_icon.png"
                                                 alt="Instagram"
                                                 className="img_linkedin"
                                               />
@@ -190,7 +186,7 @@ export const Footer = () => {
                                                   <td className="td_company_img">
                                                     <img
                                                       alt="point"
-                                                      src={point}
+                                                      src="https://email-blob.s3.pl-waw.scw.cloud/footer/point.png"
                                                       className="img_company_img"
                                                     />
                                                   </td>
@@ -224,7 +220,7 @@ export const Footer = () => {
                                                   <td className="td_company_img">
                                                     <img
                                                       alt="point"
-                                                      src={point}
+                                                      src="https://email-blob.s3.pl-waw.scw.cloud/footer/point.png"
                                                       className="img_company_img"
                                                     />
                                                   </td>
@@ -259,7 +255,7 @@ export const Footer = () => {
                                                   <td className="td_company_img">
                                                     <img
                                                       alt="point"
-                                                      src={point}
+                                                      src="https://email-blob.s3.pl-waw.scw.cloud/footer/point.png"
                                                       className="img_company_img"
                                                     />
                                                   </td>
@@ -293,7 +289,7 @@ export const Footer = () => {
                                                   <td className="td_company_img">
                                                     <img
                                                       alt="point"
-                                                      src={point}
+                                                      src="https://email-blob.s3.pl-waw.scw.cloud/footer/point.png"
                                                       className="img_company_img"
                                                     />
                                                   </td>
@@ -327,7 +323,7 @@ export const Footer = () => {
                                                   <td className="td_company_img">
                                                     <img
                                                       alt="point"
-                                                      src={point}
+                                                      src="https://email-blob.s3.pl-waw.scw.cloud/footer/point.png"
                                                       className="img_company_img"
                                                     />
                                                   </td>
@@ -347,13 +343,13 @@ export const Footer = () => {
                                 </tr>
                               </tbody>
                             </table>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-              </tbody>
+                          </td>{' '}
+                        </tr>{' '}
+                      </tbody>{' '}
+                    </table>{' '}
+                  </td>{' '}
+                </tr>{' '}
+              </tbody>{' '}
             </table>
           </td>
         </tr>
@@ -371,7 +367,7 @@ export const Footer = () => {
                         <tr>
                           <td height="100%" style={{ padding: 0 }}>
                             <img
-                              src={animacja}
+                              src="https://email-blob.s3.pl-waw.scw.cloud/footer/animation.gif"
                               alt="animacja"
                               width="100%"
                               style={{ maxWidth: '670px', display: 'block' }}

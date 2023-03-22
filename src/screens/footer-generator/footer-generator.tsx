@@ -55,7 +55,7 @@ export const FooterGenerator = () => {
               <InputText
                 id="email"
                 name="email"
-                label="email"
+                label="Email"
                 value={values.email}
                 onChange={handleChange}
               />
