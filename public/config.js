@@ -1,0 +1,3 @@
+window.FooterGenerator = {
+  NodeEnv: 'local',
+};
