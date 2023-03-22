@@ -6,7 +6,7 @@ const FooterGenerator = loadable(() => import('@screens/footer-generator/footer-
   resolveComponent: (components) => components.FooterGenerator,
 });
 
-const Footer = loadable(() => import('@screens/footer/footer'), {
+const Footer = loadable(() => import('@components/footer/footer'), {
   resolveComponent: (components) => components.Footer,
 });
 

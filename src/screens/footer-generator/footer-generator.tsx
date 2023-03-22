@@ -27,8 +27,8 @@ export const FooterGenerator = () => {
       }}
     >
       {({ values, handleChange }) => (
-        <div className="flex justify-content-center">
-          <div className="card w-full sm:max-w-25rem">
+        <div className="flex justify-content-center min-h-screen align-items-center">
+          <div className="card w-full sm:max-w-25rem" style={{ minHeight: '300px' }}>
             <h5 className="text-center">Footer Generator</h5>
             <Form className="p-fluid grid formgrid">
               <InputText
@@ -59,7 +59,7 @@ export const FooterGenerator = () => {
                 value={values.email}
                 onChange={handleChange}
               />
-              <Button type="submit" label="Generate footer" className="mt-2" />
+              <Button type="submit" label="Generate footer" className="mt-2 ml-2 mr-2" />
             </Form>
           </div>
         </div>

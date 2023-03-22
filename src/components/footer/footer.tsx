@@ -19,7 +19,7 @@ export const Footer = () => {
     }
   }, []);
   return (
-    <table style={{ width: '600px' }} align="left">
+    <table style={{ width: '600px', backgroundColor: 'white' }} align="left">
       <tbody style={{ width: '100%', padding: 0 }}>
         <tr>
           <td>
