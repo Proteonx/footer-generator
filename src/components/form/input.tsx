@@ -9,7 +9,6 @@ interface InputTextProps extends FormikValues {
   id: string;
   label?: string;
   col?: string;
-  required?: boolean;
 }
 
 export const InputText: FC<InputTextProps> = ({
@@ -18,36 +17,26 @@ export const InputText: FC<InputTextProps> = ({
   col = 'col-12',
   mt = 'mt-2',
   id,
-  required = false,
   errors,
   touched,
   values,
   onChange,
   onBlur,
-  keyfilter,
   accept,
 }) => {
   return (
     <div className={`field ${col} ${mt}`}>
-      <span className="p-float-label">
-        <PrimeReactInputText
-          type={type}
-          id={id}
-          name={id}
-          value={values}
-          onChange={onChange}
-          onBlur={onBlur}
-          className={touched && errors ? 'p-invalid mr-2' : undefined}
-          keyfilter={keyfilter}
-          accept={accept}
-        />
-        {label && (
-          <label htmlFor={id}>
-            {label}
-            {required && '*'}
-          </label>
-        )}
-      </span>
+      <label htmlFor="name1">{label}</label>
+      <PrimeReactInputText
+        type={type}
+        id={id}
+        name={id}
+        value={values}
+        onChange={onChange}
+        onBlur={onBlur}
+        className={touched && errors ? 'p-invalid mr-2' : undefined}
+        accept={accept}
+      />
       {touched && errors && <FormErrors messages={[errors]} />}
     </div>
   );
