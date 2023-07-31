@@ -15,7 +15,7 @@ export const Footer = () => {
     }
   }, []);
   return (
-    <>
+    <div style={{ maxWidth: '600px' }}>
       <div style={{ display: 'flex', width: '600px' }}>
         <div style={{ width: '50%', padding: '10px' }}>
           <p
@@ -87,7 +87,15 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div style={{ display: 'flex', width: '600px', padding: '20px 0 20px 0' }}>
+      <div
+        style={{
+          display: 'flex',
+          width: '600px',
+          padding: '20px 0 20px 0',
+          borderTop: '1px solid',
+          borderColor: '#f2f2f2',
+        }}
+      >
         <div style={{ width: '25%' }}>
           <table>
             <tbody>
@@ -190,43 +198,29 @@ export const Footer = () => {
           </table>
         </div>
       </div>
-      <table>
-        <tbody>
-          <tr>
-            <table width="100%" align="left">
-              <tbody>
-                <tr>
-                  <td height="100%" style={{ padding: 0 }}>
-                    <img
-                      src="https://email-blob.s3.pl-waw.scw.cloud/footer/animation.gif"
-                      alt="animacja"
-                      width="100%"
-                      style={{ maxWidth: '670px', display: 'block' }}
-                    />
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </tr>
-          <tr>
-            <td style={{ lineHeight: '35px' }}>&nbsp;</td>
-          </tr>
-          <tr>
-            <table width="100%" align="left">
-              <tbody>
-                <tr>
-                  <td className="td_company_address">
-                    300Brains Sp. z o.o. | 00-066 Warsaw, Poland, Plac Malachowskiego 2, 4th floor,
-                    District Court for the Capital City of Warsaw, XII Commercial Division of the
-                    National Court Register KRS: 0000771127, Share capital of PLN 100,000.00, NIP:
-                    5252779847
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </tr>
-        </tbody>
-      </table>
-    </>
+      <div
+        style={{
+          borderTop: '1px solid',
+          borderColor: '#f2f2f2',
+          paddingTop: '10px',
+          maxWidth: '600px',
+        }}
+      >
+        <img
+          src="https://email-blob.s3.pl-waw.scw.cloud/footer/Animacja.gif"
+          alt="animacja"
+          width="100%"
+          style={{ maxWidth: '600px', display: 'block' }}
+        />
+      </div>
+      <td style={{ lineHeight: '35px' }}>&nbsp;</td>
+      <div style={{ maxWidth: '600px' }}>
+        <div className="td_company_address" style={{ maxWidth: '100%' }}>
+          300Brains Sp. z o.o. | 00-066 Warsaw, Poland, Plac Malachowskiego 2, 4th floor, District
+          Court for the Capital City of Warsaw, XII Commercial Division of the National Court
+          Register KRS: 0000771127, Share capital of PLN 100,000.00, NIP: 5252779847
+        </div>
+      </div>
+    </div>
   );
 };
